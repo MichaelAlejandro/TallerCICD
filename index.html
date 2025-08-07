@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Cambiar Fondo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Haz clic para cambiar el color de fondo</h1>
+    <button id="cambiarFondo">Cambiar Fondo</button>
+
+    <script>
+        const boton = document.getElementById('cambiarFondo');
+        boton.addEventListener('click', () => {
+            // Cambiar a un color aleatorio
+            const colorAleatorio = '#' + Math.floor(Math.random()*16777215).toString(16);
+            document.body.style.backgroundColor = colorAleatorio;
+        });
+    </script>
+</body>
+</html>
